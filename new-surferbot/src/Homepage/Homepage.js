@@ -1,0 +1,32 @@
+import NavbarSignup from "../Navbar/NavbarSignup";
+
+
+function Homepage() {
+  return (
+    <div class="container mx-auto place-content-center p-1">
+      <p class="text-white text-5xl font-bold text-center">
+        Your crypto portfolio,
+        <br/>
+        <span class="bg-clip-text bg-gradient-to-t from-blue-500 via-blue-300 to-blue-200 text-transparent text-5xl font-bold text-center">
+          upgraded
+        </span>
+        .
+      </p>
+      <ul class="text-gray-200 p-3 m-3 text-center">
+        <li>Have a unique view on your portfolio.</li>
+        <li>See all your ROE within one click.</li>
+      </ul>
+      <div class="flex justify-center">
+        <NavbarSignup/>
+      </div>
+      <div class="container mx-auto bg-blue-50 m-3 p-3 rounded-lg">
+        <ul class="text-5xl text-dark text-center">
+          <li class="my-5">Hey !</li>
+          <li class="my-5">Our tools are super great.</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Homepage;
