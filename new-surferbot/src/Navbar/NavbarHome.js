@@ -11,7 +11,7 @@ function returnHomepage() {
 function NavbarHome() {
   return (
     <div className="flex">
-      <button className="text-white m-1 py-1 px-3 text-center border rounded-md hover:bg-gray-700 text-center" onClick={returnHomepage}>Home</button>
+      <button className="m-1 py-1 px-3 text-center rounded-md dark:bg-gray-700 bg-gray-700 hover:bg-gray-700 text-white text-center" onClick={returnHomepage}>Home</button>
     </div>
   );
 }

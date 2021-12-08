@@ -4,13 +4,15 @@ import Footbar from './Footbar/Footbar';
 
 function App() {
   return (
-    <div className="w-screen bg-gray-800">
-      <div class="container mx-auto p-3 m-3">
-        <Navbar/>
-        <div id="app" class="container mx-auto p-3 m-3">
-          <Homepage/>
+    <div id="theme" className="">
+      <div className="dark:bg-gray-800 bg-white">
+        <div class="container mx-auto p-2 dark:bg-gray-800 bg-white">
+          <Navbar/>
+          <div id="app" class="container mx-auto p-3 m-3">
+            <Homepage/>
+          </div>
+          <Footbar/>
         </div>
-        <Footbar/>
       </div>
     </div>
   );

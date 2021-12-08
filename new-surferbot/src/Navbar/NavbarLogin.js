@@ -11,7 +11,7 @@ function returnLogin() {
 function NavbarLogin() {
   return (
     <div className="flex">
-      <button className="text-white m-1 py-1 px-3 text-center border rounded-md hover:bg-gray-700" onClick={returnLogin}>Login</button>
+      <button className="dark:text-white text-gray-500 m-1 py-1 px-3 text-center border rounded-md dark:hover:bg-gray-700 hover:bg-gray-200" onClick={returnLogin}>Login</button>
     </div>
   );
 }

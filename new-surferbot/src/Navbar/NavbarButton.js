@@ -1,11 +1,12 @@
 function NavbarButton(props) {
+  let className = "m-1 py-1 px-3 text-center rounded-md";
   if (props.selected) {
-    return (
-      <button className="text-white m-1 py-1 px-3 text-center bg-gray-700 rounded-md">{props.p}</button>
-    );
+    className += " dark:bg-gray-100 dark:text-gray-700 bg-gray-700 text-white";
+  } else {
+    className += " bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white";
   }
   return (
-    <a className="text-gray-300 m-1 py-1 px-3 text-center bg-transparent hover:text-white hover:bg-gray-700 rounded-md" href={props.href}>{props.p}</a>
+    <button className={className}>{props.p}</button>
   );
 
 }
