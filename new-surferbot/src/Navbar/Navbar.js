@@ -14,7 +14,7 @@ class Navbar extends React.Component {
     this.handler = props.handler;
     this.state = {
       selectedPage: 'homepage',
-      navbarMobileActivated: true,
+      navbarMobileActivated: false,
     };
     this.createButtons.bind(this);
   }
@@ -23,26 +23,26 @@ class Navbar extends React.Component {
     let buttons = [];
     for (let page of this.pages) {
       if (isMobile) {
-      buttons.push(
-        <NavbarButton 
-          key={page}
-          changeToNewPage={this.handler} 
-          newPage={page}
-          selected={this.state.selectedPage}
-          handleSelection={this.handleSelection.bind(this)}
-          className="text-center rounded-md bg-gray-200 py-1 px-3 m-1"
-        />
-      );
+        buttons.push(
+          <NavbarButton 
+            key={page}
+            changeToNewPage={this.handler} 
+            newPage={page}
+            selected={this.state.selectedPage}
+            handleSelection={this.handleSelection.bind(this)}
+            className="text-center rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-white py-1 px-3 m-1"
+          />
+        );
       } else {
-      buttons.push(
-        <NavbarButton 
-          key={page}
-          changeToNewPage={this.handler} 
-          newPage={page}
-          selected={this.state.selectedPage}
-          handleSelection={this.handleSelection.bind(this)}
-        />
-      );
+        buttons.push(
+          <NavbarButton 
+            key={page}
+            changeToNewPage={this.handler} 
+            newPage={page}
+            selected={this.state.selectedPage}
+            handleSelection={this.handleSelection.bind(this)}
+          />
+        );
       }
     }
     return buttons;
