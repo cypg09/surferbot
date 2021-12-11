@@ -1,18 +1,13 @@
-import ReactDOM from 'react-dom';
-import Login from "../Login/Login";
+import NavbarButton from "./NavbarButton";
 
-function returnLogin() {
-  ReactDOM.render(
-    <Login/>,
-    document.getElementById('app')
-  );
-}
-
-function NavbarLogin() {
+function NavbarLogin(props) {
   return (
-    <div className="flex">
-      <button className="dark:text-white text-gray-500 m-1 py-1 px-3 text-center border rounded-md dark:hover:bg-gray-700 hover:bg-gray-200" onClick={returnLogin}>Login</button>
-    </div>
+      <NavbarButton 
+        changeToNewPage={props.changeToNewPage}
+        newPage={props.newPage}
+        handleSelection={props.handleSelection}
+        className="dark:text-white text-gray-500 m-1 py-1 px-3 text-center border rounded-md dark:hover:bg-gray-700 hover:bg-gray-200"
+        />
   );
 }
 

@@ -1,8 +1,13 @@
-function NavbarSignup() {
+import NavbarButton from "./NavbarButton";
+
+function NavbarSignup(props) {
   return (
-    <div className="flex">
-      <button className="dark:text-gray-800 text-white dark:bg-white bg-blue-600 dark:hover:bg-gray-200 hover:bg-blue-500 dark:border border-none m-1 py-1 px-3 text-center rounded-md">Sign up</button>
-    </div>
+      <NavbarButton 
+        changeToNewPage={props.changeToNewPage}
+        newPage={props.newPage}
+        handleSelection={props.handleSelection}
+        className="dark:text-gray-800 text-white dark:bg-white bg-blue-600 dark:hover:bg-gray-200 hover:bg-blue-500 dark:border border-none m-1 py-1 px-3 text-center rounded-md"
+        />
   );
 }
 
