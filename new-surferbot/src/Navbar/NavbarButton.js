@@ -8,6 +8,7 @@ class NavbarButton extends React.Component {
     this.newPage = props.newPage;
     this.handleSelection = props.handleSelection;
     this.className = props.className;
+    this.getClassName.bind(this);
   }
 
   handleClick() {

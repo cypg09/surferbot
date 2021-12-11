@@ -1,6 +1,3 @@
-import NavbarSignup from "../Navbar/NavbarSignup";
-
-
 function Homepage() {
   return (
     <div className="container mx-auto place-content-center p-1">
@@ -16,9 +13,6 @@ function Homepage() {
         <li>Have a unique view on your portfolio.</li>
         <li>See all your ROE within one click.</li>
       </ul>
-      <div className="flex justify-center">
-        <NavbarSignup/>
-      </div>
       <div className="container mx-auto bg-blue-50 m-3 p-3 rounded-lg">
         <ul className="text-5xl text-dark text-center">
           <li className="my-5">Hey !</li>
