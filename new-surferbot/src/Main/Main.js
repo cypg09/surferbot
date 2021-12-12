@@ -1,16 +1,14 @@
 import React from "react";
 import Homepage from "../Pages/Homepage";
 import Lorem from "../Pages/Lorem";
-import Navbar from "../Navbar/Navbar";
-import LoremBis from "../Pages/LoremBis";
 import Pricing from "../Pages/Pricing";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
+import Navbar from "../Navbar/Navbar";
 
 const pages = {
   Home: <Homepage/>,
   Lorem: <Lorem/>,
-  Lorembis: <LoremBis/>,
   Pricing: <Pricing/>,
   Login: <Login/>,
   'Sign Up': <SignUp/>,
@@ -50,7 +48,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div id="main">
+      <div id="main bg-red-400">
         <Navbar pages={this.getPages()} handler={this.changeToNewPage.bind(this)}/>
         {this.getCurrentPage()}
       </div>
