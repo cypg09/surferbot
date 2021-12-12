@@ -19,7 +19,6 @@ const pages = {
 const pagesToRender = {
   Home: <Homepage/>,
   Lorem: <Lorem/>,
-  Lorembis: <LoremBis/>,
   Pricing: <Pricing/>,
 }
 

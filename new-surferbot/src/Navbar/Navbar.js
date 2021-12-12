@@ -30,7 +30,6 @@ class Navbar extends React.Component {
             newPage={page}
             selected={this.state.selectedPage}
             handleSelection={this.handleSelection.bind(this)}
-            className="text-center rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-white py-1 px-3 m-1"
           />
         );
       } else {
@@ -63,58 +62,72 @@ class Navbar extends React.Component {
 
   render() {
     if (this.state.navbarMobileActivated) {
-      return (
-      <div className="container mx-auto dark:bg-gray-800 bg-white bg-opacity-90 p-3 m-3">
-        <div className="flex p-1">
-          <div className="flex md:hidden p-1">
+      return(
+        <div className="container mx-auto place-content-content p-1 m-1 ">
+          <div className="flex p-2">
             <NavbarMobileToggler
               handler={this.switchNavbarMobileActivation.bind(this)}
               activated={this.state.navbarMobileActivated}
             />
-          </div>
-          <div className="flex-grow"/>
-          <div className="flex md:hidden p-1">
-            <NavbarLogin
-              changeToNewPage={this.handler} 
-              newPage={"Login"}
-              selected={this.state.selectedPage}
-              handleSelection={this.handleSelection.bind(this)}
-            />
-            <NavbarSignup
-              changeToNewPage={this.handler} 
-              newPage={"Sign Up"}
-              selected={this.state.selectedPage}
-              handleSelection={this.handleSelection.bind(this)}
-            />
+            <NavbarMobile test={this.createButtons(true)} handler={this.switchNavbarMobileActivation.bind(this)}/>
+            <DarkModeToggler/>
           </div>
         </div>
-        <div className="container mx-auto text-center place-content-center">
-          <NavbarMobile test={this.createButtons(true)}/>
-          <DarkModeToggler/>
-        </div>
-      </div>
       );
+      return (
+        <div className="container mx-auto p-1 m-1 ">
+          <div className="flex p-1">
+            <div className="flex md:hidden p-1">
+              <NavbarMobileToggler
+                handler={this.switchNavbarMobileActivation.bind(this)}
+                activated={this.state.navbarMobileActivated}
+              />
+            </div>
+            <div className="flex-grow"/>
+            <div className="flex md:hidden p-1">
+              <NavbarLogin
+                changeToNewPage={this.handler} 
+                newPage={"Login"}
+                selected={this.state.selectedPage}
+                handleSelection={this.handleSelection.bind(this)}
+              />
+              <NavbarSignup
+                changeToNewPage={this.handler} 
+                newPage={"Sign Up"}
+                selected={this.state.selectedPage}
+                handleSelection={this.handleSelection.bind(this)}
+              />
+            </div>
+          </div>
+          <div className="w-50 text-center place-content-center bg-white dark:bg-gray-700 shadow-xl rounded-xl p-1 absolute top-20">
+            <div className="flex-col" onClick={this.switchNavbarMobileActivation.bind(this)}>
+              <NavbarMobile test={this.createButtons(true)}/>
+            </div>
+            <DarkModeToggler/>
+          </div>
+        </div>
+        );
     }
     return (
-      <div className="container mx-auto dark:bg-gray-800 bg-white bg-opacity-90 p-3 m-3">
-        <div className="flex p-1">
+      <div className="container mx-auto p-1 m-1">
+        <div className="flex p-2">
           <div className="hidden md:flex p-1">
           </div>
-          <div className="flex md:hidden p-1">
+          <div className="flex md:hidden">
             <NavbarMobileToggler
               handler={this.switchNavbarMobileActivation.bind(this)}
               />
           </div>
-          <div className="hidden md:flex p-1">
+          <div className="hidden md:flex">
             {this.createButtons()}
             <DarkModeToggler/>
           </div>
           <div className="flex-grow md:hidden"></div>
-          <div className="flex md:hidden p-1">
+          <div className="flex md:hidden ">
           </div>
           <div className="flex-grow"></div>
-          <div className="flex md:hidden p-1"></div>
-          <div className="flex p-1">
+          <div className="flex md:hidden "></div>
+          <div className="flex ">
             <NavbarLogin
               changeToNewPage={this.handler} 
               newPage={"Login"}
