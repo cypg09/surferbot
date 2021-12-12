@@ -5,8 +5,10 @@ function toggleDarkMode() {
   let theme = document.getElementById('theme')
   if (theme.classList.contains('dark')) {
     theme.classList.remove('dark');
+    localStorage.theme = 'clear';
   } else {
     theme.classList.add('dark');
+    localStorage.theme = 'dark';
   }
 }
 

@@ -1,9 +1,9 @@
 import React from "react";
-import Homepage from "../Pages/Homepage";
-import Lorem from "../Pages/Lorem";
-import Pricing from "../Pages/Pricing";
-import Login from "../Pages/Login";
-import SignUp from "../Pages/SignUp";
+import Homepage from "../Pages/Public/Homepage";
+import Lorem from "../Pages/Public/Lorem";
+import Pricing from "../Pages/Public/Pricing";
+import Login from "../Pages/Public/Login";
+import SignUp from "../Pages/Public/SignUp";
 import Navbar from "../Navbar/Navbar";
 
 const pages = {
