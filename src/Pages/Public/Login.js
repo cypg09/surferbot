@@ -1,4 +1,5 @@
 function Login() {
+  document.title = "Login on Surfersheets";
   return (
     <div className="flex justify-center items-center px-4 py-12 min-h-full sm:px-6 lg:px-8">
       <div className="space-y-8 w-full max-w-md">

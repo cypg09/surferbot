@@ -1,4 +1,5 @@
-function Homepage() {
+export default function Homepage() {
+  document.title = "Welcome on Surfersheets !";
   return (
     <div className="container mx-auto place-content-center p-1">
       <h1 className="dark:text-white text-black text-5xl font-bold text-center">
@@ -42,5 +43,3 @@ function Homepage() {
     </div>
   );
 }
-
-export default Homepage;
