@@ -48,7 +48,7 @@ class NavbarDesktop extends React.Component {
             <DarkModeToggler/>
           </div>
           <div className="flex-grow"></div>
-          <div className="flex ">
+          <div className="flex">
             <NavbarLogin
               changeToNewPage={this.handler} 
               newPage={"Login"}

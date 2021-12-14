@@ -6,7 +6,7 @@ function NavbarLogin(props) {
         changeToNewPage={props.changeToNewPage}
         newPage={props.newPage}
         handleSelection={props.handleSelection}
-        className="dark:text-white text-blue-600 m-1 py-1 px-3 text-center rounded-md dark:hover:bg-gray-700 hover:bg-blue-100"
+        className="px-3 py-1 m-1 text-center text-blue-600 rounded-md dark:text-blue-100 dark:hover:bg-blue-900 hover:bg-blue-100"
         />
   );
 }

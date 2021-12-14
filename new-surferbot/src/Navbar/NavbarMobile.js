@@ -4,6 +4,7 @@ import DarkModeToggler from "./DarkModeToggler";
 import NavbarLogin from "./NavbarLogin";
 import NavbarSignup from "./NavbarSignup";
 import NavbarMobileToggler from "./NavbarMobileToggler";
+import Homepage from "../Pages/Public/Homepage";
 
 
 class NavbarMobile extends React.Component {
@@ -66,6 +67,13 @@ class NavbarMobile extends React.Component {
           activated={false}
         />
         <div className="flex-grow"></div>
+        <NavbarButton 
+          key='homepage'
+          changeToNewPage={this.handler} 
+          newPage={'Home'}
+          selected={this.state.selectedPage}
+          handleSelection={this.handleSelection.bind(this)}
+        />
         <NavbarLogin
           changeToNewPage={this.handler} 
           newPage={"Login"}
@@ -84,7 +92,7 @@ class NavbarMobile extends React.Component {
 
   render() {
     return(
-      <div className="container mx-auto place-content-content p-1 m-1 ">
+      <div className="container p-1 m-1 mx-auto place-content-content">
         <div className="flex p-2">
           {this.renderNavbar()}
         </div>

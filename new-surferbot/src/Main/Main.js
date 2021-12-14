@@ -8,7 +8,7 @@ import Navbar from "../Navbar/Navbar";
 
 const pages = {
   Home: <Homepage/>,
-  Lorem: <Lorem/>,
+  Demo: <Lorem/>,
   Pricing: <Pricing/>,
   Login: <Login/>,
   'Sign Up': <SignUp/>,
@@ -16,7 +16,7 @@ const pages = {
 
 const pagesToRender = {
   Home: <Homepage/>,
-  Lorem: <Lorem/>,
+  Demo: <Lorem/>,
   Pricing: <Pricing/>,
 }
 

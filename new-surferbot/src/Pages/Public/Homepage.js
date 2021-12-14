@@ -1,14 +1,14 @@
 function Homepage() {
   return (
     <div className="container mx-auto place-content-center p-1">
-      <p className="dark:text-white text-black text-5xl font-bold text-center">
+      <h1 className="dark:text-white text-black text-5xl font-bold text-center">
         Your crypto portfolio,
         <br/>
         <span className="bg-clip-text bg-gradient-to-t from-blue-500 via-blue-300 to-blue-200 text-transparent text-5xl font-bold text-center">
           upgraded
         </span>
         .
-      </p>
+      </h1>
       <ul className="text-gray-400 p-3 m-3 text-center">
         <li>Have a unique view on your portfolio.</li>
         <li>See all your ROE within one click.</li>

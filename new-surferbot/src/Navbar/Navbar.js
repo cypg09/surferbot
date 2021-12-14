@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className="sticky top-0 bg-gray-50 dark:bg-gray-800 bg-opacity-95 dark:bg-opacity-95">
+      <div className="sticky top-0 bg-gray-50 bg-opacity-95 dark:bg-gray-800 dark:bg-opacity-95">
         <div className="flex md:hidden">
           <NavbarMobile pages={this.pages} handler={this.handler}/>
         </div>
