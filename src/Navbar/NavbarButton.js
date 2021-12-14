@@ -24,7 +24,8 @@ class NavbarButton extends React.Component {
       return this.className;
     }
     let className = "px-3 py-1 m-1 text-center rounded-md";
-    return className + " " + "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white";
+    className += " ";
+    return className + "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white";
   }
 
   render() {

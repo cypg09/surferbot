@@ -1,6 +1,6 @@
 import React from "react";
 import Homepage from "../Pages/Public/Homepage";
-import Lorem from "../Pages/Public/Lorem";
+import Demo from "../Pages/Public/Demo";
 import Pricing from "../Pages/Public/Pricing";
 import Login from "../Pages/Public/Login";
 import SignUp from "../Pages/Public/SignUp";
@@ -8,7 +8,7 @@ import Navbar from "../Navbar/Navbar";
 
 const pages = {
   Home: <Homepage/>,
-  Demo: <Lorem/>,
+  Demo: <Demo/>,
   Pricing: <Pricing/>,
   Login: <Login/>,
   'Sign Up': <SignUp/>,
@@ -16,7 +16,7 @@ const pages = {
 
 const pagesToRender = {
   Home: <Homepage/>,
-  Demo: <Lorem/>,
+  Demo: <Demo/>,
   Pricing: <Pricing/>,
 }
 

@@ -4,7 +4,6 @@ import DarkModeToggler from "./DarkModeToggler";
 import NavbarLogin from "./NavbarLogin";
 import NavbarSignup from "./NavbarSignup";
 import NavbarMobileToggler from "./NavbarMobileToggler";
-import Homepage from "../Pages/Public/Homepage";
 
 
 class NavbarMobile extends React.Component {
