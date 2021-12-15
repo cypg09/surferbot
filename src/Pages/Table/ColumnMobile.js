@@ -35,7 +35,7 @@ export default function ColumnMobile(props) {
   function renderItems(items) {
     let components = items.map(item => 
       <p className="p-1 m-1 rounded-md border border-gray-600">
-        <span className="text-sm text-gray-400">{item.key} </span>
+        <span className="text-sm font-extralight text-gray-400">{item.key} </span>
         {item.value}
       </p>
       );
