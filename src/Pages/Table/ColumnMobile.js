@@ -43,7 +43,7 @@ export default function ColumnMobile(props) {
   }
 
   return(
-    <div className="flex justify-center px-2 m-1 rounded-xl border border-black dark:border-white">
+    <div className="flex justify-center px-2 my-2">
       <div className="grid grid-cols-2 m-2 text-center text-black w-100 dark:text-white">
       <p className="col-span-2 text-xl text-black uppercase dark:text-white">
         LOGO -  

@@ -29,7 +29,7 @@ export default function TableMobile(props) {
   }, []);
 
   return(
-    <div className="grid grid-cols-1 justify-center px-1 pt-1 pb-4 rounded-xl md:grid-cols-2">
+    <div className="grid grid-cols-1 justify-center px-1 pt-1 pb-4 rounded-xl divide-y divide-white md:grid-cols-2">
       {items}
     </div>
   );
