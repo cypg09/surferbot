@@ -1,4 +1,5 @@
 import Table from "../Table/Table";
+import TableHeader from "../Table/TableHeader";
 import TableMobile from "../Table/TableMobile";
 
 function Demo() {
@@ -48,14 +49,15 @@ function Demo() {
 
   return (
   <div id="currentPage" className="container place-content-center p-1 mx-auto">
-    <h1 className="m-6 text-3xl font-extrabold text-center text-black dark:text-white">Dashboard</h1>
-    <div className="hidden lg:block">
+    <h1 className="m-6 text-5xl font-extrabold text-center text-black dark:text-white">Dashboard</h1>
+    <TableHeader/>
+    <div className="hidden place-content-center lg:flex">
       <Table
       getHeader={getHeader}
       getItems={getItems}
       />
     </div>
-    <div className="block lg:hidden">
+    <div className="flex place-content-center lg:hidden">
       <TableMobile
         getHeader={getHeader}
         getItems={getItems}
