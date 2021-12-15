@@ -12,7 +12,7 @@ export default function Table(props) {
         <th 
           key={columnName}
           scope="col" 
-          className="px-6 py-6 text-sm font-semibold tracking-wider text-center text-black uppercase dark:text-white"
+          className="px-6 py-6 text-sm font-semibold tracking-wider text-center text-black uppercase border dark:text-white"
         >
         {columnName}
         </th>
@@ -44,7 +44,7 @@ export default function Table(props) {
   }, []);
 
   return(
-    <div className="border px-3 pt-1 pb-4 rounded-xl">
+    <div className="px-3 pt-1 pb-4">
       <table className="w-full divide-y divide-gray-300">
         <thead>
           <tr>
