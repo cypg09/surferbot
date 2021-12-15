@@ -1,4 +1,5 @@
 export default function Column(props) {
+
   function renderTotalProfit() {
     if (props.totalProfit < 0) {
       return (
@@ -13,6 +14,7 @@ export default function Column(props) {
       </td>
     );
   }
+
   return(
     <tr>
       <td className="m-1 text-xl text-center text-black uppercase dark:text-white">
