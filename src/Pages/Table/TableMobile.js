@@ -1,30 +1,15 @@
 import { useState, useEffect } from "react";
-import Column from "./Column";
+import ColumnMobile from "./ColumnMobile";
 
 
 export default function TableMobile(props) {
-  const [header, setHeader] = useState([]);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    function renderHeader() {
-      let columns = props.getHeader();
-      let header = columns.map(columnName => 
-        <th 
-          key={columnName}
-          scope="col" 
-          className="px-6 py-3 text-xs font-semibold tracking-wider text-center text-gray-500 uppercase dark:text-white"
-        >
-        {columnName}
-        </th>
-      );
-      return header;
-    }
-
     function renderColumns() {
       let items = props.getItems()
       let table = items.map(column => 
-        <Column 
+        <ColumnMobile 
           key={column.name}
           name={column.name}
           allocation={column.allocation}
@@ -38,24 +23,14 @@ export default function TableMobile(props) {
     }
 
     function renderComponent() {
-      setHeader(renderHeader());
       setItems(renderColumns());
     }
     return renderComponent();
   }, []);
 
   return(
-    <div className="px-3 pt-1 pb-4 bg-gray-100 rounded-xl dark:bg-gray-700">
-      <table className="w-full bg-gray-100 divide-y divide-gray-200 dark:divide-gray-800 dark:bg-gray-700">
-        <thead>
-          <tr>
-            {header}
-          </tr>
-        </thead>
-        <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-800 dark:bg-gray-600">
-          {items}
-        </tbody>
-      </table>
+    <div className="grid grid-cols-1 justify-center px-1 pt-1 pb-4 rounded-xl md:grid-cols-2">
+      {items}
     </div>
   );
 }

@@ -55,7 +55,7 @@ function Demo() {
       getItems={getItems}
       />
     </div>
-    <div className="lg:hidden">
+    <div className="block lg:hidden">
       <TableMobile
         getHeader={getHeader}
         getItems={getItems}

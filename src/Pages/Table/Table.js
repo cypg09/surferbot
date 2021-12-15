@@ -12,7 +12,7 @@ export default function Table(props) {
         <th 
           key={columnName}
           scope="col" 
-          className="px-6 py-6 text-sm font-semibold tracking-wider text-center text-gray-500 uppercase dark:text-white"
+          className="px-6 py-6 text-sm font-semibold tracking-wider text-center text-black uppercase dark:text-white"
         >
         {columnName}
         </th>
